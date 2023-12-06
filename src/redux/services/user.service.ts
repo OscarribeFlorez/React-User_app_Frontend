@@ -5,7 +5,7 @@ import { RootState } from '../store';
 const userApi = createApi({
   reducerPath: 'userApi',
   baseQuery: fetchBaseQuery({
-    baseUrl: `http://localhost:3000/api/v1/user`,
+    baseUrl: `https://bakend-user-login.onrender.com`,
     prepareHeaders: (headers, { getState }) => {
       const state = getState() as RootState;
       const { accessToken } = state.userSlice;
